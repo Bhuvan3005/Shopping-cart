@@ -50,9 +50,15 @@ if (process.env.NODE_ENV === 'production') {
 app.use(notFound);
 app.use(errorHandler);
 
-// Connect and start
-connectDB().then(() => {
+// Connect to DB (must run for serverless cold starts)
+connectDB();
+
+// Only listen locally
+if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
-});
+}
+
+// Export for Vercel Serverless
+module.exports = app;
