@@ -1,0 +1,33 @@
+.orders { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+.orders__title { font-size: 1.75rem; color: #1a1a2e; margin-bottom: 1.5rem; }
+.orders__empty { text-align: center; padding: 3rem; background: #fff; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.orders__empty p { color: #666; font-size: 1.1rem; margin-bottom: 1rem; }
+.orders__shop-link { display: inline-block; padding: 0.75rem 2rem; background: #1a1a2e; color: #fff; border-radius: 10px; text-decoration: none; }
+.orders__list { display: flex; flex-direction: column; gap: 1rem; }
+
+.order-card { display: block; background: #fff; border-radius: 14px; padding: 1.25rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
+.order-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.order-card__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+.order-card__id { font-weight: 600; color: #1a1a2e; font-size: 0.95rem; }
+.order-card__body { display: flex; justify-content: space-between; align-items: center; }
+.order-card__items { display: flex; gap: 0.5rem; align-items: center; }
+.order-card__thumb { width: 50px; height: 50px; object-fit: cover; border-radius: 8px; border: 1px solid #eee; }
+.order-card__more { font-size: 0.85rem; color: #666; font-weight: 500; }
+.order-card__total { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 0; }
+.order-card__date { font-size: 0.85rem; color: #999; margin: 0.2rem 0 0; }
+
+.status-badge { padding: 0.3rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+.status--pending { background: #fff3cd; color: #856404; }
+.status--paid { background: #d4edda; color: #155724; }
+.status--shipped { background: #cce5ff; color: #004085; }
+.status--delivered { background: #d4edda; color: #155724; }
+.status--cancelled { background: #f8d7da; color: #721c24; }
+
+.order-confirm { text-align: center; }
+.order-confirm__icon { width: 80px; height: 80px; background: linear-gradient(135deg, #28a745, #20c997); color: #fff; font-size: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+.order-confirm h1 { color: #1a1a2e; margin-bottom: 0.5rem; }
+.order-confirm__id { color: #666; }
+.order-confirm__id code { background: #f0f0f0; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; }
+.order-confirm__status { margin-top: 0.5rem; }
+.order-confirm__actions { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+.order-confirm__actions a { text-decoration: none; display: inline-block; }

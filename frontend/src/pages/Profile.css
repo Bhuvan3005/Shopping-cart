@@ -1,0 +1,28 @@
+.profile { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+.profile__title { font-size: 1.75rem; color: #1a1a2e; margin-bottom: 1.5rem; }
+.profile__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+@media (max-width: 768px) { .profile__grid { grid-template-columns: 1fr; } }
+
+.profile__card { background: #fff; border-radius: 14px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.profile__card h2 { font-size: 1.15rem; margin: 0 0 1rem; color: #1a1a2e; }
+.profile__form { display: flex; flex-direction: column; gap: 1rem; }
+.profile__save { padding: 0.7rem 1.5rem; background: #1a1a2e; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem; }
+.profile__save:hover { opacity: 0.9; }
+.profile__save:disabled { opacity: 0.5; }
+.profile__cancel { padding: 0.7rem 1.5rem; background: #eee; color: #333; border: none; border-radius: 8px; cursor: pointer; }
+.profile__add-address { margin-top: 1rem; padding: 0.6rem 1.2rem; background: none; border: 2px dashed #ccc; color: #666; border-radius: 8px; cursor: pointer; width: 100%; }
+.profile__add-address:hover { border-color: #999; color: #333; }
+.profile__empty { color: #999; font-style: italic; }
+
+.address-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.address-card { background: #f8f9fa; padding: 1rem; border-radius: 10px; position: relative; }
+.address-card p { margin: 0.2rem 0; font-size: 0.9rem; color: #555; }
+.address-card__name { font-weight: 600; color: #222 !important; }
+.address-card__delete { position: absolute; top: 0.75rem; right: 0.75rem; background: none; border: none; color: #dc3545; cursor: pointer; font-size: 0.85rem; }
+
+.address-form { margin-top: 1rem; }
+.address-form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.address-form__grid input { padding: 0.6rem; border: 1.5px solid #ddd; border-radius: 8px; font-size: 0.9rem; }
+.address-form__grid input:focus { outline: none; border-color: #1a1a2e; }
+.address-form__full { grid-column: 1 / -1; }
+.address-form__actions { display: flex; gap: 0.75rem; margin-top: 0.75rem; }

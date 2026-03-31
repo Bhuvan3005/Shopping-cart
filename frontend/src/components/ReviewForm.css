@@ -1,0 +1,66 @@
+.review-form {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.review-form h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.review-form__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.review-form__rating label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.review-form__comment {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.review-form__comment:focus {
+  outline: none;
+  border-color: #1a1a2e;
+}
+
+.review-form__submit {
+  margin-top: 0.75rem;
+  padding: 0.65rem 1.5rem;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.review-form__submit:hover {
+  background: #16213e;
+}
+
+.review-form__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.review-form__login {
+  color: #666;
+  font-style: italic;
+  padding: 1rem 0;
+}
